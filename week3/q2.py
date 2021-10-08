@@ -61,19 +61,19 @@ if __name__ == '__main__':
                 both_weeks.append(i)
 
         # query 3 : What were the most common lotto numbers
-        number = 0
-        common_number = {}
-        for i in week1_dict:
-            if week1_dict[i] in common_number:
-                week1_dict[i] = week1_dict[i] + 1
-            else:
-                week1_dict[i] = number
+    number = 0
+    common_number = {}
+    for i in week1_dict:
+        if week1_dict[i] in common_number:
+            week1_dict[i] = week1_dict[i] + 1
+        else:
+            week1_dict[i] = number
 
-        #
-#     lotto_numbers = {}
-# for i in TOTAL_PEOPLE:
-#     lotto_numbers[i] = random.randrange(1, 20)
-#
-# print('people who bought  tickets on both weeks:')
-# for name in lotto_numbers:
-#     print(name)
+    #
+    #     lotto_numbers = {}
+    # for i in TOTAL_PEOPLE:
+    #     lotto_numbers[i] = random.randrange(1, 20)
+    #
+    # print('people who bought  tickets on both weeks:')
+    # for name in lotto_numbers:
+    #     print(name)
