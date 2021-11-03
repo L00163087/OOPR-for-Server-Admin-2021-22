@@ -67,7 +67,7 @@ def common_people():
     common_people = []
     for i in week1:
         for j in week2:
-            if i == j and i not in common_people:
+            if i == j:
                 common_people.append(i)
     print(common_people)
     return common_people
@@ -92,30 +92,30 @@ def unique_people():
 
 # query 3 : What were the most common lotto numbers
 def most_common_lotto_numbers():
-    frequency = 0
+    frequency = 1
     common_numbers = {}
     for i in lotto_numbers[0]:
         i = str(lotto_numbers[0][i])
         if i in common_numbers:
             common_numbers[i] = common_numbers[i] + 1
-            frequency = 0
+            frequency = 1
         else:
             common_numbers[i] = frequency
-            frequency = 0
+            frequency = 1
 
     for j in lotto_numbers[1]:
         j = str(lotto_numbers[1][j])
         if j in common_numbers:
             common_numbers[j] = common_numbers[j] + 1
-            frequency = 0
+            frequency = 1
         else:
             common_numbers[j] = frequency
-            frequency = 0
+            frequency = 1
 
     print(common_numbers)
     print('most common lotto numbers:', end="\t")
     for i in common_numbers:
-        if common_numbers[i] > 0:
+        if common_numbers[i] > 1:
             print(i, end="\t")
 
 
